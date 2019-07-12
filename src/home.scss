@@ -1,0 +1,49 @@
+/* General */
+.container {
+  width: 1100px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.container__inner {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+/* Header */
+header {
+    padding: 24px 0;
+
+    .container__inner {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Main Menu */
+.main-menu {
+  background: #13306f;
+  padding: 30px 0;
+
+  .container__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
