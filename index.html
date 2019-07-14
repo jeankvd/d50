@@ -7,20 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>D50 Code Test</title>
 
-    <!-- JS -->
-    <script src="./index.js"></script>
-
     <!-- CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link rel="stylesheet" href="https://use.typekit.net/coz4dlk.css" />
     <link rel="stylesheet" href="./src/home.scss" />
   </head>
   <body>
     <!-- Header -->
-    <header class="container">
-      <div class="container__iner">
+    <header>
+      <div class="container__inner">
         <h1>Logo Here</h1>
         <p>Call Now For Help <a href="tel:555-555-5555">555-555-5555</a></p>
       </div>
@@ -28,7 +26,12 @@
 
     <!-- Top Nav -->
     <nav class="main-menu">
-      <div class="container__inner">
+      <div class="toggle-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="container__inner" id="menu">
         <a href="#">Mesothelioma</a>
         <a href="#">Treatment</a>
         <a href="#">Prognosis</a>
@@ -45,7 +48,7 @@
         <!-- Sidebar -->
         <div class="sidebar">
           <div class="breadcrumb">
-            <a href="#">Home / Mesothelioma Treatment Options</a>
+            <a href="#">Home</a> / <a href="">Mesothelioma Treatment Options</a>
           </div>
 
           <h3>Navigate Page</h3>
@@ -56,15 +59,9 @@
             <li><a href="#">Consultation</a></li>
           </ul>
 
-          <div>
-            <img src="#" alt="" />
-            <ul>
-              <li>Top Treatments</li>
-              <li>Best Doctors</li>
-              <li>VA Benefits ($3,000+)</li>
-            </ul>
-            <a href=""></a>
-          </div>
+          <a href="#">
+            <img src="./src/img/ad.png" alt="" />
+          </a>
         </div>
 
         <!-- Content -->
@@ -83,43 +80,50 @@
             </p>
           </div>
 
-          <h2>Mesothelioma Treatment Goals</h2>
-          <p>
-            Mesothelioma treatments accomplish different goals, depending on the
-            particular patient’s case. Specialists tailor mesothelioma
-            treatments according to each patient’s unique diagnosis. Customized
-            treatments give patients the best chance of survival. Each patient
-            has factors that doctors must consider before determining a
-            treatment plan.
-          </p>
-          <h6>
-            Doctors look at the following factors to determine the best
-            mesothelioma treatment options:
-          </h6>
-          <ul>
-            <li>Disease location (pleural, peritoneal or pericardial)</li>
-            <li>Disease stage (pleural mesothelioma stages 1-4)</li>
-            <li>
-              Mesothelioma cell type (epithelioid, sarcomatoid or biphasic)
-            </li>
-            <li>Patient’s age and overall level of health</li>
-          </ul>
-          <p>
-            Doctors consider all possible outcomes, including potential risks
-            and benefits. In general, doctors prescribe more aggressive
-            therapies for less advanced mesothelioma cases.
-          </p>
-
-          <div class="did-you-know">
-            <h2>Did You Know</h2>
+          <div id="content">
+            <h2>Mesothelioma Treatment Goals</h2>
             <p>
-              On average, a patient can double their life expectancy from 12 to
-              24 months with an EPP. Some patients have gone on to live 5 or
-              more years due to their EPP surgery.
+              Mesothelioma treatments accomplish different goals, depending on
+              the particular patient’s case. Specialists tailor mesothelioma
+              treatments according to each patient’s unique diagnosis.
+              Customized treatments give patients the best chance of survival.
+              Each patient has factors that doctors must consider before
+              determining a treatment plan.
             </p>
+            <h6>
+              Doctors look at the following factors to determine the best
+              mesothelioma treatment options:
+            </h6>
+            <ul>
+              <li>Disease location (pleural, peritoneal or pericardial)</li>
+              <li>Disease stage (pleural mesothelioma stages 1-4)</li>
+              <li>
+                Mesothelioma cell type (epithelioid, sarcomatoid or biphasic)
+              </li>
+              <li>Patient’s age and overall level of health</li>
+            </ul>
+            <p>
+              Doctors consider all possible outcomes, including potential risks
+              and benefits. In general, doctors prescribe more aggressive
+              therapies for less advanced mesothelioma cases.
+            </p>
+
+            <div class="did-you-know">
+              <h2>Did You Know?</h2>
+              <hr />
+              <p>
+                On average, a patient can double their life expectancy from 12
+                to 24 months with an EPP. Some patients have gone on to live 5
+                or more years due to their EPP surgery.
+              </p>
+            </div>
           </div>
         </section>
       </div>
     </main>
   </body>
+  <footer>
+    <!-- JS -->
+    <script src="./index.js"></script>
+  </footer>
 </html>
